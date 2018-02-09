@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5CD70161202D8E2600BAE837 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD70160202D8E2600BAE837 /* AppDelegate.m */; };
-		5CD70164202D8E2600BAE837 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD70163202D8E2600BAE837 /* ViewController.m */; };
 		5CD70167202D8E2600BAE837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD70165202D8E2600BAE837 /* Main.storyboard */; };
 		5CD7016A202D8E2600BAE837 /* CNContactExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CD70168202D8E2600BAE837 /* CNContactExample.xcdatamodeld */; };
 		5CD7016C202D8E2600BAE837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD7016B202D8E2600BAE837 /* Assets.xcassets */; };
@@ -16,6 +15,8 @@
 		5CD70172202D8E2600BAE837 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD70171202D8E2600BAE837 /* main.m */; };
 		5CD7017C202D8E2600BAE837 /* CNContactExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7017B202D8E2600BAE837 /* CNContactExampleTests.m */; };
 		5CD70187202D8E2700BAE837 /* CNContactExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD70186202D8E2700BAE837 /* CNContactExampleUITests.m */; };
+		5CD70195202D97EB00BAE837 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD70194202D97EB00BAE837 /* TableViewController.m */; };
+		5CD70199202D995700BAE837 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD70198202D995700BAE837 /* Contacts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		5CD7015C202D8E2600BAE837 /* CNContactExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CNContactExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD7015F202D8E2600BAE837 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CD70160202D8E2600BAE837 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5CD70162202D8E2600BAE837 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5CD70163202D8E2600BAE837 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5CD70166202D8E2600BAE837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CD70169202D8E2600BAE837 /* CNContactExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CNContactExample.xcdatamodel; sourceTree = "<group>"; };
 		5CD7016B202D8E2600BAE837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,9 @@
 		5CD70182202D8E2700BAE837 /* CNContactExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CNContactExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD70186202D8E2700BAE837 /* CNContactExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNContactExampleUITests.m; sourceTree = "<group>"; };
 		5CD70188202D8E2700BAE837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD70194202D97EB00BAE837 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5CD70196202D981F00BAE837 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		5CD70198202D995700BAE837 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD70199202D995700BAE837 /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 				5CD7017A202D8E2600BAE837 /* CNContactExampleTests */,
 				5CD70185202D8E2700BAE837 /* CNContactExampleUITests */,
 				5CD7015D202D8E2600BAE837 /* Products */,
+				5CD70197202D995600BAE837 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,14 +109,14 @@
 			children = (
 				5CD7015F202D8E2600BAE837 /* AppDelegate.h */,
 				5CD70160202D8E2600BAE837 /* AppDelegate.m */,
-				5CD70162202D8E2600BAE837 /* ViewController.h */,
-				5CD70163202D8E2600BAE837 /* ViewController.m */,
 				5CD70165202D8E2600BAE837 /* Main.storyboard */,
 				5CD7016B202D8E2600BAE837 /* Assets.xcassets */,
 				5CD7016D202D8E2600BAE837 /* LaunchScreen.storyboard */,
 				5CD70170202D8E2600BAE837 /* Info.plist */,
 				5CD70171202D8E2600BAE837 /* main.m */,
 				5CD70168202D8E2600BAE837 /* CNContactExample.xcdatamodeld */,
+				5CD70194202D97EB00BAE837 /* TableViewController.m */,
+				5CD70196202D981F00BAE837 /* TableViewController.h */,
 			);
 			path = CNContactExample;
 			sourceTree = "<group>";
@@ -133,6 +137,14 @@
 				5CD70188202D8E2700BAE837 /* Info.plist */,
 			);
 			path = CNContactExampleUITests;
+			sourceTree = "<group>";
+		};
+		5CD70197202D995600BAE837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CD70198202D995700BAE837 /* Contacts.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,10 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CD70164202D8E2600BAE837 /* ViewController.m in Sources */,
 				5CD7016A202D8E2600BAE837 /* CNContactExample.xcdatamodeld in Sources */,
 				5CD70172202D8E2600BAE837 /* main.m in Sources */,
 				5CD70161202D8E2600BAE837 /* AppDelegate.m in Sources */,
+				5CD70195202D97EB00BAE837 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
